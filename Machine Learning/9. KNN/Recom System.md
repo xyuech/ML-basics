@@ -1,15 +1,15 @@
 # 推荐系统介绍
----
+
 ## 概述
  常用的推荐系统算法有五种，每一种都有其优点，不同场景下每一种算法效果会不一样。（下面是常用的推荐系统算法）
 
-1.基于内容的推荐 model-based
-2.协同过滤推荐 collaborative filtering
+1.基于内容的推荐 
+2.协同过滤推荐 
 3.基于关联规则的推荐
 4.基于知识的推荐 knowledge-based
 5.混合推荐
 
-## 1.基于内容的推荐
+## 1.基于内容的推荐 Model-based
 基于内容的推荐系统会挖掘用户曾经喜欢的物品，从而去推荐类似的物品。本质上就是利用用户已知偏好，兴趣等特征和物品的特征相匹配，以此为用户推荐新的感兴趣的商品，这种算法主要是要提取推荐对象的特征。常见的方法包括SVD, SVD++。
 
 **优点**：
@@ -22,10 +22,9 @@
 - 新颖性不如其他算法，无法发现令人惊喜的推荐
 - 算法需要有足够和真实的用户数据
 
-
-整体上推荐系统有三种方式：
+## 2.协同过滤 Collaborative filtering
+整体上推荐系统有2种方式：
 - User-based (memory-based): user -> user -> item 给用户推荐与之相似的用户u喜欢的item
 - Item-based (memory-based): user -> item -> item 给用户推荐与喜欢的某件商品i类似的item
-- SVD (singular value decomposition, model-based): 抽取用户喜欢item的特征 (latent factor)，推荐具备这些特征的item
 
 ## 比较
